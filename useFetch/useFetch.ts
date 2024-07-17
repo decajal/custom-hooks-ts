@@ -1,16 +1,5 @@
 import { useEffect, useState } from 'react';
-
-interface IError {
-  code: number;
-  message: string;
-}
-
-interface IState {
-  data: unknown;
-  isLoading: boolean;
-  hasError: boolean;
-  error: IError | null;
-}
+import { IState } from './interfaces';
 
 const localCahce: { [key: string]: IState } = {};
 
